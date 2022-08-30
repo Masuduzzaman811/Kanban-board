@@ -1,3 +1,4 @@
+"use strict";
 (self["webpackChunkkanban_board"] = self["webpackChunkkanban_board"] || []).push([["index"],{
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css":
@@ -6,7 +7,6 @@
   \********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -21,11 +21,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ Object(function webpackMissingModule() { var e = new Error("Cannot find module './images/image2.jpeg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/f-2.jpg */ "./src/images/f-2.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: black;\r\n  color: white;\r\n}\r\n\r\n#nav-div {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  padding: 10px 0;\r\n\r\n}\r\n\r\n#nav-ul {\r\n  display: flex;\r\n  list-style-type: none;\r\n}\r\n\r\n.nav-item {\r\n  padding: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bold;\r\n}\r\n/* movie image header*/\r\n.main-container {\r\n  padding-left: 2%;\r\n}\r\n.movie-title {\r\n  padding: 10% 0 5% 10%;\r\n  width: 40%;\r\n  font-size: 50px;\r\n  color: #ffffff;\r\n  font-weight: 900;\r\n}\r\n.movie-description {\r\n  color: #ffffff;\r\n  text-align: left;\r\n  width: 35%;\r\n  padding: 0 0 2% 10% ;\r\n}\r\n.comment-container {\r\n  padding-bottom: 10%;\r\n}\r\n.comment-button {\r\n  background-color: rgb(15, 161, 15);\r\n  padding: 12px 25px;\r\n  width: fit-content;\r\n  margin-left: 10%;\r\n  border-radius: 2px;\r\n  transition: padding 0.5s;\r\n\r\n}\r\n.comment-button:hover {\r\n  padding: 10px;\r\n}\r\n.comment-button a {\r\n  text-decoration: none;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n.content-container {\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat\r\n}\r\n\r\n#footer-container {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100%;\r\n  color: white;\r\n}\r\n\r\n.footer-p a {\r\n  color: white;\r\n  text-decoration: none;\r\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,uBAAuB;EACvB,YAAY;AACd;;AAEA;EACE,uCAAuC;EACvC,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,eAAe;;AAEjB;;AAEA;EACE,aAAa;EACb,qBAAqB;AACvB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,YAAY;EACZ,iBAAiB;AACnB;AACA,sBAAsB;AACtB;EACE,gBAAgB;AAClB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,eAAe;EACf,cAAc;EACd,gBAAgB;AAClB;AACA;EACE,cAAc;EACd,gBAAgB;EAChB,UAAU;EACV,oBAAoB;AACtB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,kCAAkC;EAClC,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,wBAAwB;;AAE1B;AACA;EACE,aAAa;AACf;AACA;EACE,qBAAqB;EACrB,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;AACA;EACE,sGAA0F;EAC1F;AACF;;AAEA;EACE,uCAAuC;EACvC,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,eAAe;EACf,SAAS;EACT,WAAW;EACX,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,qBAAqB;AACvB","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: black;\r\n  color: white;\r\n}\r\n\r\n#nav-div {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  padding: 10px 0;\r\n\r\n}\r\n\r\n#nav-ul {\r\n  display: flex;\r\n  list-style-type: none;\r\n}\r\n\r\n.nav-item {\r\n  padding: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bold;\r\n}\r\n/* movie image header*/\r\n.main-container {\r\n  padding-left: 2%;\r\n}\r\n.movie-title {\r\n  padding: 10% 0 5% 10%;\r\n  width: 40%;\r\n  font-size: 50px;\r\n  color: #ffffff;\r\n  font-weight: 900;\r\n}\r\n.movie-description {\r\n  color: #ffffff;\r\n  text-align: left;\r\n  width: 35%;\r\n  padding: 0 0 2% 10% ;\r\n}\r\n.comment-container {\r\n  padding-bottom: 10%;\r\n}\r\n.comment-button {\r\n  background-color: rgb(15, 161, 15);\r\n  padding: 12px 25px;\r\n  width: fit-content;\r\n  margin-left: 10%;\r\n  border-radius: 2px;\r\n  transition: padding 0.5s;\r\n\r\n}\r\n.comment-button:hover {\r\n  padding: 10px;\r\n}\r\n.comment-button a {\r\n  text-decoration: none;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n.content-container {\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('./images/image2.jpeg');\r\n  background-repeat: no-repeat\r\n}\r\n\r\n#footer-container {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100%;\r\n  color: white;\r\n}\r\n\r\n.footer-p a {\r\n  color: white;\r\n  text-decoration: none;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: black;\r\n  color: white;\r\n}\r\n\r\n#nav-div {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  padding: 10px 0;\r\n\r\n}\r\n\r\n#nav-ul {\r\n  display: flex;\r\n  list-style-type: none;\r\n}\r\n\r\n.nav-item {\r\n  padding: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bold;\r\n}\r\n/* movie image header*/\r\n.main-container {\r\n  padding-left: 2%;\r\n}\r\n.movie-title {\r\n  padding: 10% 0 5% 10%;\r\n  width: 40%;\r\n  font-size: 50px;\r\n  color: #ffffff;\r\n  font-weight: 900;\r\n}\r\n.movie-description {\r\n  color: #ffffff;\r\n  text-align: left;\r\n  width: 35%;\r\n  padding: 0 0 2% 10% ;\r\n}\r\n.comment-container {\r\n  padding-bottom: 10%;\r\n}\r\n.comment-button {\r\n  background-color: rgb(15, 161, 15);\r\n  padding: 12px 25px;\r\n  width: fit-content;\r\n  margin-left: 10%;\r\n  border-radius: 2px;\r\n  transition: padding 0.5s;\r\n\r\n}\r\n.comment-button:hover {\r\n  padding: 10px;\r\n}\r\n.comment-button a {\r\n  text-decoration: none;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n.content-container {\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat\r\n  \r\n}\r\n/* Movie list */\r\n.movie-list-container {\r\n  margin-left: 10%;\r\n  position: relative;\r\n  padding-bottom: 40px;\r\n}\r\n.movie-list-title {\r\n  font-weight: 700;\r\n  padding: 10px 0;\r\n  color: #ffffff;\r\n\r\n}\r\n.movie-list-wrapper {\r\n  display: flex;\r\n  height: 300px;\r\n  align-items: center;\r\n  flex-flow: row wrap;\r\n  gap: 20px;\r\n}\r\n.movie-list {\r\n  position: relative;\r\n  width: 20%;\r\n  background-color: #464444;\r\n  border-radius: 10px;\r\n  margin-left: 20px;\r\n  transition: width 0.4s;\r\n}\r\n.movie-list-item-img {\r\n  width: 100%;\r\n  border-top-left-radius: 20px;\r\n  border-top-right-radius: 20px;\r\n  transition: width ease-in-out 0.5s;\r\n}\r\n.movie-list:hover {\r\n  width: 18%;\r\n \r\n}\r\n.movie-name {\r\n  color: #ffffff;\r\n  font-weight: 600;\r\n  font-size: 14px;\r\n  padding: 18px 3px 10px 5px;\r\n}\r\n\r\n#footer-container {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100%;\r\n  color: white;\r\n}\r\n\r\n.footer-p a {\r\n  color: white;\r\n  text-decoration: none;\r\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,uBAAuB;EACvB,YAAY;AACd;;AAEA;EACE,uCAAuC;EACvC,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,eAAe;;AAEjB;;AAEA;EACE,aAAa;EACb,qBAAqB;AACvB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,YAAY;EACZ,iBAAiB;AACnB;AACA,sBAAsB;AACtB;EACE,gBAAgB;AAClB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,eAAe;EACf,cAAc;EACd,gBAAgB;AAClB;AACA;EACE,cAAc;EACd,gBAAgB;EAChB,UAAU;EACV,oBAAoB;AACtB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,kCAAkC;EAClC,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,wBAAwB;;AAE1B;AACA;EACE,aAAa;AACf;AACA;EACE,qBAAqB;EACrB,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;AACA;EACE,sGAAuF;EACvF;;AAEF;AACA,eAAe;AACf;EACE,gBAAgB;EAChB,kBAAkB;EAClB,oBAAoB;AACtB;AACA;EACE,gBAAgB;EAChB,eAAe;EACf,cAAc;;AAEhB;AACA;EACE,aAAa;EACb,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,SAAS;AACX;AACA;EACE,kBAAkB;EAClB,UAAU;EACV,yBAAyB;EACzB,mBAAmB;EACnB,iBAAiB;EACjB,sBAAsB;AACxB;AACA;EACE,WAAW;EACX,4BAA4B;EAC5B,6BAA6B;EAC7B,kCAAkC;AACpC;AACA;EACE,UAAU;;AAEZ;AACA;EACE,cAAc;EACd,gBAAgB;EAChB,eAAe;EACf,0BAA0B;AAC5B;;AAEA;EACE,uCAAuC;EACvC,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,eAAe;EACf,SAAS;EACT,WAAW;EACX,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,qBAAqB;AACvB","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: black;\r\n  color: white;\r\n}\r\n\r\n#nav-div {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  padding: 10px 0;\r\n\r\n}\r\n\r\n#nav-ul {\r\n  display: flex;\r\n  list-style-type: none;\r\n}\r\n\r\n.nav-item {\r\n  padding: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bold;\r\n}\r\n/* movie image header*/\r\n.main-container {\r\n  padding-left: 2%;\r\n}\r\n.movie-title {\r\n  padding: 10% 0 5% 10%;\r\n  width: 40%;\r\n  font-size: 50px;\r\n  color: #ffffff;\r\n  font-weight: 900;\r\n}\r\n.movie-description {\r\n  color: #ffffff;\r\n  text-align: left;\r\n  width: 35%;\r\n  padding: 0 0 2% 10% ;\r\n}\r\n.comment-container {\r\n  padding-bottom: 10%;\r\n}\r\n.comment-button {\r\n  background-color: rgb(15, 161, 15);\r\n  padding: 12px 25px;\r\n  width: fit-content;\r\n  margin-left: 10%;\r\n  border-radius: 2px;\r\n  transition: padding 0.5s;\r\n\r\n}\r\n.comment-button:hover {\r\n  padding: 10px;\r\n}\r\n.comment-button a {\r\n  text-decoration: none;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n.content-container {\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('../images/f-2.jpg');\r\n  background-repeat: no-repeat\r\n  \r\n}\r\n/* Movie list */\r\n.movie-list-container {\r\n  margin-left: 10%;\r\n  position: relative;\r\n  padding-bottom: 40px;\r\n}\r\n.movie-list-title {\r\n  font-weight: 700;\r\n  padding: 10px 0;\r\n  color: #ffffff;\r\n\r\n}\r\n.movie-list-wrapper {\r\n  display: flex;\r\n  height: 300px;\r\n  align-items: center;\r\n  flex-flow: row wrap;\r\n  gap: 20px;\r\n}\r\n.movie-list {\r\n  position: relative;\r\n  width: 20%;\r\n  background-color: #464444;\r\n  border-radius: 10px;\r\n  margin-left: 20px;\r\n  transition: width 0.4s;\r\n}\r\n.movie-list-item-img {\r\n  width: 100%;\r\n  border-top-left-radius: 20px;\r\n  border-top-right-radius: 20px;\r\n  transition: width ease-in-out 0.5s;\r\n}\r\n.movie-list:hover {\r\n  width: 18%;\r\n \r\n}\r\n.movie-name {\r\n  color: #ffffff;\r\n  font-weight: 600;\r\n  font-size: 14px;\r\n  padding: 18px 3px 10px 5px;\r\n}\r\n\r\n#footer-container {\r\n  background-color: rgba(80, 73, 73, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100%;\r\n  color: white;\r\n}\r\n\r\n.footer-p a {\r\n  color: white;\r\n  text-decoration: none;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38,7 +38,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -150,7 +149,6 @@ module.exports = function (cssWithMappingToString) {
   \********************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (url, options) {
@@ -189,7 +187,6 @@ module.exports = function (url, options) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -221,7 +218,6 @@ module.exports = function (item) {
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -276,7 +272,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -390,7 +385,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -439,7 +433,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -460,7 +453,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -482,7 +474,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -562,7 +553,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -588,46 +578,22 @@ module.exports = styleTagTransform;
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _modules_header_images_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/header-images.js */ "./src/modules/header-images.js");
-/* harmony import */ var _modules_header_images_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_header_images_js__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-//setInterval(headerImages, 2000);
-//headerImages();
 
 
 
 
-
- // "main": "babel.config.js"
 
 /***/ }),
 
-/***/ "./src/modules/header-images.js":
-/*!**************************************!*\
-  !*** ./src/modules/header-images.js ***!
-  \**************************************/
-/***/ (() => {
+/***/ "./src/images/f-2.jpg":
+/*!****************************!*\
+  !*** ./src/images/f-2.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-/*import image from '../images/f-t-1.png';
-
-const headerImages = () => {
-    //let i = 0;
-  const imageContainer = document.querySelector('.content-container');
-  imageContainer.setAttribute('style', 'background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('+ image+');background-repeat: no-repeat; background-size:cover'); 
-  /*const color = ['./images/1.jpeg']; 
-  imageContainer.setAttribute('style', 'background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('+ color[i] +');background-repeat: no-repeat; background-size:cover'); 
- 
-  i = (i + 1) % color.length;
-  
-}
-
-export default headerImages;
-*/
+module.exports = __webpack_require__.p + "b0dfc743e248785551d3.jpg";
 
 /***/ })
 
