@@ -109,6 +109,15 @@ body {
 .movie-desc {
   font-size: 12px;
 }
+
+.movie-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color:rgb(15, 161, 15);
+  font-weight: 600;
+
+}
+
 #footer-container {
   background-color: rgba(80, 73, 73, 0.5);
   display: flex;
