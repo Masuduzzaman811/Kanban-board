@@ -7,7 +7,10 @@ const movieList = async () => {
       const summary = element.summary;
       const replaceP = summary.replace('<p>',' ');
       const replaceClosedP = replaceP.replace('</p>',' ')
-      const words = replaceClosedP.split(' ').slice(0, 8).join(' ');
+      const replaceB = replaceClosedP.replace('<b>',' ')
+      const replaceCloseB = replaceB.replace('</b>',' ')
+      const words = replaceCloseB.split(' ').slice(0, 8).join(' ');
+      console.log(words);
         document.querySelector('.movie-list-wrapper').innerHTML += `
         <div class="movie-list">
         <img class="movie-list-item-img" src="${element.image.medium}">
