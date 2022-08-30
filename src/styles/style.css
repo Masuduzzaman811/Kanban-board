@@ -77,7 +77,12 @@ body {
 }
 /* Movie list */
 .movie-list-container {
-  padding: 0 4% 0 10%;
+  padding: 0 4% 0 4%;
+}
+.movie-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .movie-list-title {
   padding-bottom: 10px;
@@ -103,19 +108,29 @@ body {
 }
 .movie-name {
   padding-top: 20px;
+  padding-right: 5px;
   font-weight: 700;
   font-size: large;
+  
 }
 .movie-desc {
   font-size: 12px;
+  padding-right: 3px;
 }
 
 .movie-icon {
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 18px;
   color:rgb(15, 161, 15);
   font-weight: 600;
 
+}
+.likes-count {
+  font-size: 12px;
+}
+.like-comment-cat {
+  display: flex;
+  gap: 15px;
 }
 
 #footer-container {
@@ -132,4 +147,59 @@ body {
 .footer-p a {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .movie-list-title {
+    margin-left: 5%;
+  }
+  .movie-list-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-flow: wrap;
+  }
+  .movie-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding-bottom: 20px;
+    transition: width ease 0.5s;
+  }
+
+  .movie-list-item-img {
+    width: 100%;
+    transition: width ease 0.5s;
+  }
+  .movie-list-item-img:hover {
+    width: 98%;
+   
+}
+ 
+  .movie-desc {
+    padding-bottom: 12px;
+  }
+  .like-comment-cat {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+   
+  }
+ .like-button:hover .movie-icon {
+  color: #ffffff;
+ }
+ .like-button:hover .likes-count {
+  color: #ffffff;
+ }
+ .comment-movie:hover .movie-icon {
+  color: #ffffff;
+ }
+ .comment-movie:hover .likes-count {
+  color: #ffffff;
+ }
+ 
+ .likes-count {
+  color:rgb(15, 161, 15);
+ }
 }

@@ -1,7 +1,7 @@
 const movieList = async () => {
     const response = await fetch('https://api.tvmaze.com/shows?page=1');
     const data = await response.json();
-    const size = 5;
+    const size = 100;
     const firstFiveData = data.slice(0, size);
     firstFiveData.forEach(element => {
       const summary = element.summary;
@@ -14,11 +14,13 @@ const movieList = async () => {
         <div class="movie-list-buttons">
         <div class="movie-name">${element.name}</div>
         <div class="movie-desc">${words}...</div>
+        <div class="like-comment-cat">
         <div class="like-button">
-        <a href="#"><i class="movie-icon far fa-thumbs-up"></i></a><span class="likes-count">50 Likes</span>
+        <a href="#"><i class="movie-icon thumbs far fa-thumbs-up"></i></a><span class="likes-count">150 Likes</span>
       </div>
         <div class="comment-movie">
         <a href="#"><i class="movie-icon fas fa-message"></i></a><span class="likes-count">Comments</span>
+      </div>
       </div>
          </div>
         </div>`;
