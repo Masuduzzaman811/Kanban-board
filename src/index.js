@@ -12,3 +12,9 @@ import './styles/style.css';
  }
 
  document.body.appendChild(component());
+
+
+
+
+
+ // "main": "babel.config.js"
