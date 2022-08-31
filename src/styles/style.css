@@ -83,19 +83,7 @@ body {
 
 /* Movie list */
 .movie-list-container {
-<<<<<<< HEAD
-  margin-left: 10%;
-  position: relative;
-  padding-bottom: 40px;
-}
-
-.movie-list-title {
-  font-weight: 700;
-  padding: 10px 0;
-  color: #fff;
-=======
-  padding: 0 4% 0 4%;
->>>>>>> dev
+	padding: 0 4% 0 4%;
 }
 
 .movie-list-wrapper {
@@ -120,28 +108,19 @@ body {
   padding: 5px;
   border-radius: 10px;
 }
-<<<<<<< HEAD
 
-.movie-list:hover {
-  width: 18%;
-=======
 .movie-list-buttons {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-left: 30px;
->>>>>>> dev
 }
 
 .movie-name {
-<<<<<<< HEAD
-  color: #fff;
-=======
   padding-top: 20px;
   padding-right: 5px;
   font-weight: 700;
   font-size: large;
-  
 }
 .movie-desc {
   font-size: 12px;
@@ -152,9 +131,7 @@ body {
   margin-right: 10px;
   font-size: 18px;
   color:rgb(15, 161, 15);
->>>>>>> dev
   font-weight: 600;
-
 }
 .likes-count {
   font-size: 12px;
@@ -180,7 +157,6 @@ body {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* Card-Modal: Student-B */
 
 #modal-open {
@@ -282,7 +258,7 @@ body {
 }
 
 /* End-of-Modal */
-=======
+
 @media only screen and (min-width: 768px) {
   .movie-list-title {
     margin-left: 5%;
@@ -306,29 +282,33 @@ body {
     width: 100%;
     transition: width ease 0.5s;
   }
+
   .movie-list-item-img:hover {
     width: 98%;
-   
-}
+	}
  
   .movie-desc {
     padding-bottom: 12px;
   }
+
   .like-comment-cat {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-   
   }
+
  .like-button:hover .movie-icon {
   color: #ffffff;
  }
+
  .like-button:hover .likes-count {
   color: #ffffff;
  }
+
  .comment-movie:hover .movie-icon {
   color: #ffffff;
  }
+ 
  .comment-movie:hover .likes-count {
   color: #ffffff;
  }
@@ -337,4 +317,3 @@ body {
   color:rgb(15, 161, 15);
  }
 }
->>>>>>> dev
