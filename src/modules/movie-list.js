@@ -23,7 +23,11 @@ const movieList = async () => {
       </div>
         <div class="comment-movie">
         
+<<<<<<< HEAD
         <a href="#"><i class="movie-icon fas fa-message"></i></a><span id="${element.id}" class="likes-count">Comments</span>
+=======
+        <a href="#"><i class="movie-icon fas fa-message"></i></a><span class="likes-count">Comments</span>
+>>>>>>> dev
       
       ;
         </div>
