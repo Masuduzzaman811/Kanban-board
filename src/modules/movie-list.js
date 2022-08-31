@@ -1,16 +1,17 @@
 const movieList = async () => {
     const response = await fetch('https://api.tvmaze.com/shows?page=1');
     const data = await response.json();
-    const size = 100;
-    const firstFiveData = data.slice(0, size);
-    firstFiveData.forEach(element => {
+    const size = 50;
+    const movies = data.slice(0, size);
+    movies.forEach(element => {
+      
       const summary = element.summary;
       const replaceP = summary.replace('<p>',' ');
       const replaceClosedP = replaceP.replace('</p>',' ')
       const replaceB = replaceClosedP.replace('<b>',' ')
       const replaceCloseB = replaceB.replace('</b>',' ')
       const words = replaceCloseB.split(' ').slice(0, 8).join(' ');
-      console.log(words);
+
         document.querySelector('.movie-list-wrapper').innerHTML += `
         <div class="movie-list">
         <img class="movie-list-item-img" src="${element.image.medium}">
@@ -22,8 +23,11 @@ const movieList = async () => {
         <a href="#"><i class="movie-icon thumbs far fa-thumbs-up"></i></a><span class="likes-count">150 Likes</span>
       </div>
         <div class="comment-movie">
+        
         <a href="#"><i class="movie-icon fas fa-message"></i></a><span class="likes-count">Comments</span>
-      </div>
+      
+      ;
+        </div>
       </div>
          </div>
         </div>`;
