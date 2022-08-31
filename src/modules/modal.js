@@ -15,11 +15,11 @@ const modal = () => {
           <h1>Movie name</h1>
           <div class="mod-about">
             <p class="movie-details">Genre:</p>
-            <p class="movie-details">length:</p>
-						<p class="movie-details">Release Date:</p>
-						<p class="movie-details">About</p>
-					</div>
-					</div>
+            <p class="movie-details">Type:</p>
+            <p class="movie-details">Premiered:</p>
+            <p class="movie-details">Language:</p>
+            </div>
+            </div>
         <div class="modal-show-comment">
           <h2 id="mod-comment-head">Comments <span id="comment-count">(3)</span></h2>
           <div class="comment-box">
@@ -35,7 +35,7 @@ const modal = () => {
           <button type="submit" id="submit-comment">Comment</button>
         </div>
       </div>
-    </div>`
-}
+    </div>`;
+};
 
 export default modal;

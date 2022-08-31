@@ -182,19 +182,19 @@ body {
 }
 
 .modal-details {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .mod-img {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .responsive {
-	width: 100%;
-	height: auto;
-	vertical-align: middle;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 .close {
@@ -209,7 +209,7 @@ body {
   grid-template-columns: auto auto;
   padding: 0.5rem;
   gap: 1rem;
-	text-align: left;
+  text-align: left;
 }
 
 .modal-show-comment {

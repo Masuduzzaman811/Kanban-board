@@ -1,5 +1,5 @@
 import './styles/style.css';
-import commentModal from './modules/modal.js'
+import commentModal from './modules/modal.js';
 
 commentModal();
 
@@ -20,4 +20,3 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
-
