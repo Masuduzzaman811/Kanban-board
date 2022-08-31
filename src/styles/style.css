@@ -176,11 +176,25 @@ body {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  width: 50%;
-
-  /* background-color: pink; */
+  width: 90%;
   margin: 1rem auto 2rem;
   padding: 0.5rem;
+}
+
+.modal-details {
+	width: 100%;
+	text-align: center;
+}
+
+.mod-img {
+	display: flex;
+	justify-content: center;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
 }
 
 .close {
@@ -190,16 +204,12 @@ body {
   font-weight: bold;
 }
 
-.modal-details {
-  width: 70%;
-  text-align: center;
-}
-
 .mod-about {
   display: grid;
   grid-template-columns: auto auto;
   padding: 0.5rem;
   gap: 1rem;
+	text-align: left;
 }
 
 .modal-show-comment {
@@ -216,7 +226,7 @@ body {
 .modal-add-comment {
   display: flex;
   flex-flow: column wrap;
-  width: 60%;
+  width: 90%;
 }
 
 .add-commnet-header {

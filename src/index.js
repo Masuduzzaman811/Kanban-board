@@ -1,4 +1,7 @@
 import './styles/style.css';
+import commentModal from './modules/modal.js'
+
+commentModal();
 
 const modal = document.getElementById('modal');
 const btn = document.getElementById('modal-open');
@@ -17,3 +20,4 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
+
