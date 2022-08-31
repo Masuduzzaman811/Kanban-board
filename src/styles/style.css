@@ -15,7 +15,6 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 10px 0;
-
 }
 
 #nav-ul {
@@ -32,26 +31,31 @@ body {
   color: white;
   font-weight: bold;
 }
-/* movie image header*/
+
+/* movie image header */
 .main-container {
   padding-left: 2%;
 }
+
 .movie-title {
   padding: 10% 0 5% 10%;
   width: 40%;
   font-size: 50px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 900;
 }
+
 .movie-description {
-  color: #ffffff;
+  color: #fff;
   text-align: left;
   width: 35%;
-  padding: 0 0 2% 10% ;
+  padding: 0 0 2% 10%;
 }
+
 .comment-container {
   padding-bottom: 10%;
 }
+
 .comment-button {
   background-color: rgb(15, 161, 15);
   padding: 12px 25px;
@@ -59,26 +63,29 @@ body {
   margin-left: 10%;
   border-radius: 2px;
   transition: padding 0.5s;
-
 }
+
 .comment-button:hover {
   padding: 10px;
 }
+
 .comment-button a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
 }
+
 .content-container {
-  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('../images/f-2.jpg');
-  background-repeat: no-repeat
-  
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../images/f-2.jpg');
+  background-repeat: no-repeat;
 }
+
 /* Movie list */
 .movie-list-container {
-  padding: 0 4% 0 4%;
+	padding: 0 4% 0 4%;
 }
+
 .movie-list-wrapper {
   display: flex;
   flex-direction: column;
@@ -87,6 +94,7 @@ body {
 .movie-list-title {
   padding-bottom: 10px;
 }
+
 .movie-list {
   display: flex;
   margin-top: 20px;
@@ -100,18 +108,19 @@ body {
   padding: 5px;
   border-radius: 10px;
 }
+
 .movie-list-buttons {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-left: 30px;
 }
+
 .movie-name {
   padding-top: 20px;
   padding-right: 5px;
   font-weight: 700;
   font-size: large;
-  
 }
 .movie-desc {
   font-size: 12px;
@@ -123,7 +132,6 @@ body {
   font-size: 18px;
   color:rgb(15, 161, 15);
   font-weight: 600;
-
 }
 .likes-count {
   font-size: 12px;
@@ -149,6 +157,108 @@ body {
   text-decoration: none;
 }
 
+/* Card-Modal: Student-B */
+
+#modal-open {
+  background-color: white;
+}
+
+.modal-section {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.mod-separate {
+  background-color: tomato;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.modal-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 1rem auto 2rem;
+  padding: 0.5rem;
+}
+
+.modal-details {
+  width: 100%;
+  text-align: center;
+}
+
+.mod-img {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mod-about {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0.5rem;
+  gap: 1rem;
+  text-align: left;
+}
+
+.modal-show-comment {
+  text-align: center;
+}
+
+.comment-box {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: justify;
+  gap: 0.5rem;
+}
+
+.modal-add-comment {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+}
+
+.add-commnet-header {
+  text-align: center;
+}
+
+.comment-input {
+  display: flex;
+  width: 60%;
+  height: 1.5rem;
+  margin: 0.3rem auto;
+}
+
+#submit-comment {
+  width: 80px;
+  margin: 0 auto;
+}
+
+/* End-of-Modal */
+
 @media only screen and (min-width: 768px) {
   .movie-list-title {
     margin-left: 5%;
@@ -172,29 +282,33 @@ body {
     width: 100%;
     transition: width ease 0.5s;
   }
+
   .movie-list-item-img:hover {
     width: 98%;
-   
-}
+	}
  
   .movie-desc {
     padding-bottom: 12px;
   }
+
   .like-comment-cat {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-   
   }
+
  .like-button:hover .movie-icon {
   color: #ffffff;
  }
+
  .like-button:hover .likes-count {
   color: #ffffff;
  }
+
  .comment-movie:hover .movie-icon {
   color: #ffffff;
  }
+ 
  .comment-movie:hover .likes-count {
   color: #ffffff;
  }
