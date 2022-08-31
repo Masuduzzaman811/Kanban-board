@@ -1,3 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: bisque;
+  background-color: black;
+  color: white;
+}
+
+#nav-div {
+  background-color: rgba(80, 73, 73, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+
+}
+
+#nav-ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  padding: 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* movie image header*/
+.main-container {
+  padding-left: 2%;
+}
+.movie-title {
+  padding: 10% 0 5% 10%;
+  width: 40%;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 900;
+}
+.movie-description {
+  color: #ffffff;
+  text-align: left;
+  width: 35%;
+  padding: 0 0 2% 10% ;
+}
+.comment-container {
+  padding-bottom: 10%;
+}
+.comment-button {
+  background-color: rgb(15, 161, 15);
+  padding: 12px 25px;
+  width: fit-content;
+  margin-left: 10%;
+  border-radius: 2px;
+  transition: padding 0.5s;
+
+}
+.comment-button:hover {
+  padding: 10px;
+}
+.comment-button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content-container {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('../images/f-2.jpg');
+  background-repeat: no-repeat
+  
+}
+/* Movie list */
+.movie-list-container {
+  margin-left: 10%;
+  position: relative;
+  padding-bottom: 40px;
+}
+.movie-list-title {
+  font-weight: 700;
+  padding: 10px 0;
+  color: #ffffff;
+
+}
+.movie-list-wrapper {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.movie-list {
+  position: relative;
+  width: 20%;
+  background-color: #464444;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: width 0.4s;
+}
+.movie-list-item-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: width ease-in-out 0.5s;
+}
+.movie-list:hover {
+  width: 18%;
+ 
+}
+.movie-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 18px 3px 10px 5px;
+}
+
+#footer-container {
+  background-color: rgba(80, 73, 73, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.footer-p a {
+  color: white;
+  text-decoration: none;
 }
