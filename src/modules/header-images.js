@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /* import image from '../images/f-t-1.png';
 
 const headerImages = () => {
@@ -13,3 +15,4 @@ const headerImages = () => {
 
 export default headerImages;
 */
+>>>>>>> dev
