@@ -1,12 +1,12 @@
+import createApp from "./createApp.js";
 
-const likeMovie = (movies) => {
+const likeMovie = () => {
     const likeButton = document.querySelectorAll('.likes-count');
     likeButton.forEach(element => {
         element.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log(e.target.id);
-
-            saveLike();
+           const movieId = e.target.id;
+            createApp(movieId); 
         })
  
     });

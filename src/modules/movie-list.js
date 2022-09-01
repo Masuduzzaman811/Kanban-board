@@ -20,7 +20,7 @@ const movieList = async () => {
         <div class="movie-desc">${words}...</div>
         <div class="like-comment-cat">
         <div class="like-button">
-       <span class="likes-count" id="like-${element.id}"> <i class="movie-icon thumbs far fa-thumbs-up"></i> 150 Likes</span>
+       <span class="likes-count" id="item${element.id}"> <i class="movie-icon thumbs far fa-thumbs-up"></i> 150 Likes</span>
       </div>
         <div class="comment-movie">
         
@@ -30,7 +30,7 @@ const movieList = async () => {
          </div>
         </div>`;
   });
-  likeMovie(movies);
+  likeMovie();
 };
 
 export default movieList;
