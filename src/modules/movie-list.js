@@ -1,4 +1,5 @@
-import likeMovie from "./likeMovie.js";
+import likeMovie from './likeMovie.js';
+
 const movieList = async () => {
   const response = await fetch('https://api.tvmaze.com/shows?page=1');
   const data = await response.json();

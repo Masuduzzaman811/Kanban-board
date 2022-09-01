@@ -1,4 +1,4 @@
-import createApp from "./createApp.js";
+import createFetchLikesApi from "./createFetchLikesApi.js";
 
 const likeMovie = () => {
     const likeButton = document.querySelectorAll('.likes-count');
@@ -6,7 +6,7 @@ const likeMovie = () => {
         element.addEventListener('click', (e) => {
             e.preventDefault();
            const movieId = e.target.id;
-            createApp(movieId); 
+           createFetchLikesApi(movieId); 
         })
  
     });
