@@ -1,3 +1,4 @@
+import likeMovie from "./likeMovie.js";
 const movieList = async () => {
   const response = await fetch('https://api.tvmaze.com/shows?page=1');
   const data = await response.json();
@@ -19,18 +20,17 @@ const movieList = async () => {
         <div class="movie-desc">${words}...</div>
         <div class="like-comment-cat">
         <div class="like-button">
-        <a href="#"><i class="movie-icon thumbs far fa-thumbs-up"></i></a><span class="likes-count">150 Likes</span>
+       <span class="likes-count" id="like-${element.id}"> <i class="movie-icon thumbs far fa-thumbs-up"></i> 150 Likes</span>
       </div>
         <div class="comment-movie">
         
         <a href="#"><i class="movie-icon fas fa-message"></i></a><span class="likes-count">Comments</span>
-      
-      ;
         </div>
       </div>
          </div>
         </div>`;
   });
+  likeMovie(movies);
 };
 
 export default movieList;
