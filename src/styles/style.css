@@ -38,7 +38,6 @@ body {
   padding-left: 2%;
 }
 
-
 .movie-title {
   padding: 10% 0 5% 10%;
   width: 40%;
@@ -47,7 +46,6 @@ body {
   font-weight: 900;
 }
 
-
 .movie-description {
   color: #fff;
   text-align: left;
@@ -55,11 +53,9 @@ body {
   padding: 0 0 2% 10%;
 }
 
-
 .comment-container {
   padding-bottom: 10%;
 }
-
 
 .comment-button {
   background-color: rgb(15, 161, 15);
@@ -70,11 +66,9 @@ body {
   transition: padding 0.5s;
 }
 
-
 .comment-button:hover {
   padding: 10px;
 }
-
 
 .comment-button a {
   text-decoration: none;
@@ -82,7 +76,6 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-
 
 .content-container {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../images/f-2.jpg');
@@ -121,7 +114,6 @@ body {
   border-radius: 10px;
 }
 
-
 .movie-list-buttons {
   display: flex;
   flex-direction: column;
@@ -129,14 +121,12 @@ body {
   margin-left: 30px;
 }
 
-
 .movie-name {
   padding-top: 20px;
   padding-right: 5px;
   font-weight: 700;
   font-size: large;
 }
-
 
 .movie-desc {
   font-size: 12px;
@@ -146,7 +136,7 @@ body {
 .movie-icon {
   margin-right: 10px;
   font-size: 18px;
-  color:  rgb(15, 161, 15);
+  color: rgb(15, 161, 15);
   font-weight: 600;
   padding-right: 3px;
 }
@@ -162,7 +152,6 @@ body {
   margin-left: 3px;
   font-size: 14px;
 }
-
 
 .like-icon:hover {
   color: #fff;
@@ -301,7 +290,6 @@ body {
     margin-left: 3%;
   }
 
-
   .movie-list-wrapper,
   .movie-list-wrapper-comedy {
     display: flex;
@@ -309,7 +297,6 @@ body {
     gap: 32px;
     flex-flow: wrap;
   }
-
 
   .movie-list {
     position: relative;
@@ -325,7 +312,6 @@ body {
     transition: width ease 0.5s;
   }
 
-
   .movie-list-item-img:hover {
     width: 98%;
   }
@@ -333,7 +319,6 @@ body {
   .movie-desc {
     padding-bottom: 12px;
   }
-
 
   .like-comment-cat {
     display: flex;
@@ -361,4 +346,3 @@ body {
     color: #fff;
   }
 }
-
