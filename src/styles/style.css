@@ -76,13 +76,20 @@ body {
   
 }
 /* Movie list */
-.movie-list-container {
+.movie-list-container.active {
   padding: 0 4% 0 4%;
+  display: block;
 }
-.movie-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.movie-list-container {
+  display: none;
+}
+.movie-list-title {
+  padding-left: 6%;
+}
+.movie-list-wrapper,.movie-list-wrapper-comedy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 .movie-list-title {
   padding-bottom: 10px;
@@ -123,10 +130,27 @@ body {
   font-size: 18px;
   color:rgb(15, 161, 15);
   font-weight: 600;
+  padding-right: 3px;
 
 }
-.likes-count {
-  font-size: 12px;
+.like-icon {
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  color:rgb(15, 161, 15);
+}
+.like-icon-text {
+  margin-left: 3px;
+  font-size: 14px;
+  
+}
+
+.like-icon:hover {
+  color: #ffffff;
+}
+.icon-text {
+  font-size: 10px;
+  padding-left: 4px;
 }
 .like-comment-cat {
   display: flex;
@@ -151,9 +175,9 @@ body {
 
 @media only screen and (min-width: 768px) {
   .movie-list-title {
-    margin-left: 5%;
+    margin-left: 3%;
   }
-  .movie-list-wrapper {
+  .movie-list-wrapper,.movie-list-wrapper-comedy {
     display: flex;
     justify-content: center;
     gap: 32px;
