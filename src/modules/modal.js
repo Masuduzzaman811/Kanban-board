@@ -1,8 +1,15 @@
-import closeModal from "./closeModal.js";
+import closeModal from './closeModal.js';
+import postCommentsApi from './postComment.js';
+import fetchComments from './fetchComments.js';
 
 const modal = (movie) => {
   const movieItem = movie[0];
   const modalConainer = document.querySelector('#modal');
+  const username = document.getElementById('input-name');
+  const userComment = document.getElementById('input-comment');
+
+  fetchComments(movieItem.id);
+  
   modalConainer.innerHTML = `
     <div class="mod-separate">
       <span class="close">&times;</span>
@@ -22,11 +29,9 @@ const modal = (movie) => {
             </div>
             </div>
         <div class="modal-show-comment">
-          <h2 id="mod-comment-head">Comments <span id="comment-count">(3)</span></h2>
+          <h2 id="mod-comment-head">Comments <span id="comment-count"></span></h2>
           <div class="comment-box">
-            <p>Comment 1: lkfleklf Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque.</p>
-            <p>Comment 2: Lorem ipsum dolor sit amet.</p>
-            <p>Comment 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
           </div>
         </div>
             <div class="modal-add-comment">
@@ -38,6 +43,14 @@ const modal = (movie) => {
       </div>
     </div>`;
 
+    document.getElementById('submit-comment').addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log(username.value);
+      postCommentsApi(movieItem.id, username.value, userComment.value);
+      //location.reload();
+    })
+
   closeModal(modalConainer);
+  console.log(movieItem.id);
 }
 export default modal;

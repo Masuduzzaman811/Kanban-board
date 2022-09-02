@@ -1,5 +1,5 @@
-const createCommentsApi = async () => {
-  const formData = { item_id: "item1", username: "Jane", comment: "Hello"}
+const postCommentsApi = async (movieItem, user, comment) => {
+  const formData = { item_id: `${movieItem.id}`, username: `${user}`, comment: `${comment}` };
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/MqYDJtfDU0rHErulpT7W/comments', {
   method: 'POST',
   headers: {
@@ -12,5 +12,4 @@ const createCommentsApi = async () => {
   console.log(data);
  
 }
-
-export default createCommentsApi;
+export default postCommentsApi;
