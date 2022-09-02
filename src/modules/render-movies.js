@@ -1,6 +1,6 @@
-import commentImage from '../images/chat.png';
 import countMovies from './count-movies.js';
 import likeMovie from './likeMovie.js';
+import popupComment from './popupComment.js';
 
 const renderMovies = async (allMovies) => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/eGZ62GeBh7TTirykKrEX/likes/');
@@ -33,7 +33,7 @@ const renderMovies = async (allMovies) => {
         <i class="like-icon far fa-thumbs-up"></i><span class="like-icon-text">${counterlikes}</span>
       </div>
         <div class="comment-movie">
-        <img src="${commentImage}" class="comment-icon" id="${element.id}"><span class="icon-text">130</span>
+        <a href="#" class="show-comment-popup"><i class="movie-icon fas fa-message"></i><span class="likes-count" id="${element.id}">Comment</span></a>
         </div>
       </div>
           </div>
@@ -41,5 +41,6 @@ const renderMovies = async (allMovies) => {
   });
   countMovies(allMovies);
   likeMovie();
+  popupComment(allMovies);
 };
 export default renderMovies;
