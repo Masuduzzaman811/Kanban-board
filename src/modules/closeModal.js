@@ -3,6 +3,6 @@ const closeModal = (modalConainer) => {
   close.addEventListener('click', () => {
     modalConainer.style.display = 'none';
   });
-}
+};
 
 export default closeModal;

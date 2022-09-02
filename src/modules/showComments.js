@@ -1,8 +1,10 @@
-const showComments = (date, user, comment, counter) => {
-  const commentBox = document.querySelector('.comment-box');
-  const commentCunter = document.getElementById('comment-count');
-
-  commentCunter.innerText = `(${counter})`
-  commentBox.innerHTML += `<p><span>${date} </span> <span> ${user}</span> <span> ${comment}</span></p>`;
-}
+const showComments = (results) => {
+  const commentContainer = document.querySelector('.modal-show-comment');
+  const resultsArray = results;
+  resultsArray.forEach((element) => {
+    commentContainer.innerHTML += `
+    <div class="comment-box">
+    <p class="comments"><span>${element.creation_date}: </span><span>${element.username} - </span>${element.comment}</p>`;
+  });
+};
 export default showComments;

@@ -12,6 +12,5 @@ const popupComment = (movies) => {
       modalComment(clickedMovie);
     });
   });
-
 };
 export default popupComment;
