@@ -32,7 +32,7 @@ body {
   font-weight: bold;
 }
 
-/* movie image header */
+/* movie image header  */
 .main-container {
   padding-left: 2%;
 }
@@ -82,8 +82,14 @@ body {
 }
 
 /* Movie list */
-.movie-list-container {
-	padding: 0 4% 0 4%;
+.movie-list-container.active {
+  padding: 0 4% 0 4%;
+  display: block;
+}
+
+.movie-list-title {
+  padding-left: 6%;
+  padding-bottom: 10px;
 }
 
 .movie-list-wrapper {
@@ -91,15 +97,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.movie-list-title {
-  padding-bottom: 10px;
-}
 
 .movie-list {
   display: flex;
   margin-top: 20px;
-  background-color: rgba(255, 255,255, 0.1);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
 }
 
@@ -122,6 +125,7 @@ body {
   font-weight: 700;
   font-size: large;
 }
+
 .movie-desc {
   font-size: 12px;
   padding-right: 3px;
@@ -130,12 +134,32 @@ body {
 .movie-icon {
   margin-right: 10px;
   font-size: 18px;
-  color:rgb(15, 161, 15);
+  color: rgb(15, 161, 15);
   font-weight: 600;
+  padding-right: 3px;
 }
-.likes-count {
-  font-size: 12px;
+
+.like-icon {
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  color: rgb(15, 161, 15);
 }
+
+.like-icon-text {
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+.like-icon:hover {
+  color: #fff;
+}
+
+.icon-text {
+  font-size: 10px;
+  padding-left: 4px;
+}
+
 .like-comment-cat {
   display: flex;
   gap: 15px;
@@ -261,14 +285,17 @@ body {
 
 @media only screen and (min-width: 768px) {
   .movie-list-title {
-    margin-left: 5%;
+    margin-left: 3%;
   }
-  .movie-list-wrapper {
+
+  .movie-list-wrapper,
+  .movie-list-wrapper-comedy {
     display: flex;
     justify-content: center;
     gap: 32px;
     flex-flow: wrap;
   }
+
   .movie-list {
     position: relative;
     display: flex;
@@ -285,8 +312,8 @@ body {
 
   .movie-list-item-img:hover {
     width: 98%;
-	}
- 
+  }
+
   .movie-desc {
     padding-bottom: 12px;
   }
@@ -297,23 +324,23 @@ body {
     padding-right: 10px;
   }
 
- .like-button:hover .movie-icon {
-  color: #ffffff;
- }
+  .likes-count {
+    color: rgb(15, 161, 15);
+  }
 
- .like-button:hover .likes-count {
-  color: #ffffff;
- }
+  .like-button:hover .movie-icon {
+    color: #fff;
+  }
 
- .comment-movie:hover .movie-icon {
-  color: #ffffff;
- }
- 
- .comment-movie:hover .likes-count {
-  color: #ffffff;
- }
- 
- .likes-count {
-  color:rgb(15, 161, 15);
- }
+  .like-button:hover .likes-count {
+    color: #fff;
+  }
+
+  .comment-movie:hover .movie-icon {
+    color: #fff;
+  }
+
+  .comment-movie:hover .likes-count {
+    color: #fff;
+  }
 }
