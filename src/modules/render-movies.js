@@ -6,7 +6,6 @@ const renderMovies = async (allMovies) => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/eGZ62GeBh7TTirykKrEX/likes/');
 
   const results = await response.json();
-  console.log(results);
 
   allMovies.forEach((element) => {
     const likesids = results.find(like => like.item_id === 'item'+element.id);
@@ -32,7 +31,6 @@ const renderMovies = async (allMovies) => {
         <div class="like-comment-cat">
         <div class="like-button" id="item${element.id}">
         <i class="like-icon far fa-thumbs-up"></i><span class="like-icon-text">${counterlikes}</span>
-     
       </div>
         <div class="comment-movie">
         <img src="${commentImage}" class="comment-icon" id="${element.id}"><span class="icon-text">130</span>
@@ -44,13 +42,6 @@ const renderMovies = async (allMovies) => {
   });
   countMovies(allMovies);
   likeMovie()
-
-
-
-
-
-
-
 
 }
 export default renderMovies;
