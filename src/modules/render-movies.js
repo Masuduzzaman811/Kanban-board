@@ -8,10 +8,10 @@ const renderMovies = async (allMovies) => {
   const results = await response.json();
 
   allMovies.forEach((element) => {
-    const likesids = results.find(like => like.item_id === 'item'+element.id);
+    const likesids = results.find((like) => like.item_id === `item${element.id}`);
     let counterlikes = likesids?.likes;
 
-    if(counterlikes === undefined){
+    if (counterlikes === undefined) {
       counterlikes = 0;
     }
 
@@ -38,10 +38,8 @@ const renderMovies = async (allMovies) => {
       </div>
           </div>
         </div>`;
-
   });
   countMovies(allMovies);
-  likeMovie()
-
-}
+  likeMovie();
+};
 export default renderMovies;

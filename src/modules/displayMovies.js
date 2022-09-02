@@ -1,8 +1,6 @@
 import renderMovies from './render-movies.js';
 
-const displayMovies =  (allMovies) => {
-  
+const displayMovies = (allMovies) => {
   renderMovies(allMovies);
-
-  }
-   export default displayMovies;
+};
+export default displayMovies;
