@@ -1,6 +1,7 @@
-import image11 from '../images/11.jpg';
+import closeModal from "./closeModal.js";
 
-const modal = () => {
+const modal = (movie) => {
+  const movieItem = movie[0];
   const modalConainer = document.querySelector('#modal');
   modalConainer.innerHTML = `
     <div class="mod-separate">
@@ -9,15 +10,15 @@ const modal = () => {
         <div class="modal-details">
 
           <div class="mod-img">
-            <img src="${image11}" class="responsive" alt="movie-poster">
+            <img src="${movieItem.image.medium}" class="responsive" alt="movie-poster">
           </div>
 
-          <h1>Movie name</h1>
+          <h1>${movieItem.name}</h1>
           <div class="mod-about">
-            <p class="movie-details">Genre:</p>
-            <p class="movie-details">Type:</p>
-            <p class="movie-details">Premiered:</p>
-            <p class="movie-details">Language:</p>
+            <p class="movie-details">Genre: ${movieItem.genres}</p>
+            <p class="movie-details">Type: ${movieItem.type}</p>
+            <p class="movie-details">Premiered: ${movieItem.premiered}</p>
+            <p class="movie-details">Language: ${movieItem.language}</p> 
             </div>
             </div>
         <div class="modal-show-comment">
@@ -36,6 +37,7 @@ const modal = () => {
         </div>
       </div>
     </div>`;
-};
 
+  closeModal(modalConainer);
+}
 export default modal;

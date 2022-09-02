@@ -1,3 +1,4 @@
+import popupComment from "./popupComment.js";
 const movieList = async () => {
   const response = await fetch('https://api.tvmaze.com/shows?page=1');
   const data = await response.json();
@@ -20,21 +21,15 @@ const movieList = async () => {
         <div class="like-comment-cat">
         <div class="like-button">
         <a href="#"><i class="movie-icon thumbs far fa-thumbs-up"></i></a><span class="likes-count">150 Likes</span>
-      </div>
-        <div class="comment-movie">
-        
-<<<<<<< HEAD
-        <a href="#"><i class="movie-icon fas fa-message"></i></a><span id="${element.id}" class="likes-count">Comments</span>
-=======
-        <a href="#"><i class="movie-icon fas fa-message"></i></a><span class="likes-count">Comments</span>
->>>>>>> dev
-      
-      ;
         </div>
-      </div>
-         </div>
+        <div class="comment-movie">
+        <a href="#" class="show-comment-popup"><i class="movie-icon fas fa-message"></i><span class="likes-count" id="${element.id}">Comment</span></a>
+        </div>
+        </div>
+        </div>
         </div>`;
   });
+  popupComment(movies);
 };
 
 export default movieList;
