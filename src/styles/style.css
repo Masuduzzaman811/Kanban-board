@@ -32,7 +32,6 @@ body {
   font-weight: bold;
 }
 
-
 /* movie image header  */
 .main-container {
   padding-left: 2%;
@@ -81,7 +80,6 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../images/f-2.jpg');
   background-repeat: no-repeat;
 }
-
 
 /* Movie list */
 .movie-list-container.active {
