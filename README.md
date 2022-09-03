@@ -2,7 +2,12 @@
 
 > Movie Stream is simple webpage, where we fetch movie data from the TVMaze API and implemented some functionality such as popup modal for movie details, add comments, see comments and hit like.
 
-![Screenshot](...)
+
+## Screenshots
+
+![Home Page](./src/images/Screenshot/ss1.jpg)
+![Movie List](./src/images/Screenshot/ss2.jpg)
+![Comment PopUp](./src/images/Screenshot/ss3.jpg)
 
 
 ## Built With
@@ -14,10 +19,10 @@
 
 ## Live Demo 
 
-[Comming soon...](.....)
+[Click here to see live!](....)
 
 ## Live presentation of the project
-[See video presentation (Coming soon...)](......)
+[See video presentation)](https://drive.google.com/drive/folders/1GAOtQnzNtthP4m1_i3qMn8Sa2QX9XDgR)
 
 
 ## Getting Started
