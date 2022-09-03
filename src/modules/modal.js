@@ -15,7 +15,7 @@ const modal = (movie) => {
           <div class="mod-img">
             <img src="${movieItem.image.medium}" class="responsive" alt="movie-poster">
           </div>
-          <h1>${movieItem.name}</h1>
+          <h1 class="movie-name-modal">${movieItem.name}</h1>
           <div class="mod-about">
             <p class="movie-details">Genre: ${movieItem.genres}</p>
             <p class="movie-details">Type: ${movieItem.type}</p>
